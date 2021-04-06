@@ -1,3 +1,6 @@
+// practical 3 server - client chat applications based on socket programming
+// by Atharva Tikhe - MITU19IMBI0025
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -30,6 +33,7 @@ public class server_view implements ActionListener {
         serverMessageText.setBounds(6,320,500,25);
         serverSendButton.setBounds(510,320,70, 25);
 
+        // registering action event
         serverSendButton.addActionListener(this);
 
         serverFrame.add(serverSendButton);
@@ -39,7 +43,6 @@ public class server_view implements ActionListener {
         serverFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         // Socket programming
-
         s = ss.accept();
         pr = new PrintStream(s.getOutputStream());
         pr.flush();

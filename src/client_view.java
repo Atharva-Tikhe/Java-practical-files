@@ -1,3 +1,6 @@
+// practical 3 server - client chat applications based on socket programming
+// by Atharva Tikhe - MITU19IMBI0025
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,6 +13,7 @@ import java.net.Socket;
 
 public class client_view implements ActionListener {
     //global socket settings
+    //Keep global as more than 1 method requires the vars
     String IP_ADD = "localhost";
     int PORT = 9900;
     String message;
